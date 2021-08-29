@@ -1,0 +1,239 @@
+﻿.contact_content {
+	 height: 90%;
+	 top: 5%;
+	 left: 55px;
+	 min-height: 566px;
+	 display: flex;
+	 flex-direction: column;
+	 position: absolute;
+	 justify-content: space-between;
+	 width: calc(100% - 55px);
+}
+ .contact_content .text_h1 {
+	 color: #08fdd8;
+}
+ .contact_content > .contact_main {
+	 height: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+}
+ .contact_content > .contact_main > .left_side {
+	 margin-left: 6%;
+	 width: 35%;
+	 vertical-align: middle;
+	 display: block;
+	 max-height: 90%;
+}
+ .contact_content > .contact_main > .left_side .left_side_text {
+	 color: red;
+}
+ .contact_content > .contact_main > .left_side form {
+	 width: 100%;
+	 opacity: 0.7;
+}
+ .contact_content > .contact_main > .left_side form div.input_row:not(:first-child) {
+	 padding: 0;
+	 margin: 0 0 10px;
+	 overflow: hidden;
+	 display: block;
+	 clear: both;
+	 position: relative;
+}
+ .contact_content > .contact_main > .left_side form div.input_row:first-child {
+	 display: flex;
+	 justify-content: space-between;
+	 padding: 0 0 10px;
+	 overflow: hidden;
+	 clear: both;
+	 position: relative;
+}
+ .contact_content > .contact_main > .left_side form > div.input_row input {
+	 width: 100%;
+	 border: 0;
+	 background: #37393b;
+	 height: 50px;
+	 font-size: 16px;
+	 color: #fff;
+	 padding: 0 20px;
+	 box-sizing: border-box;
+	 font-family: monospace;
+	 transition: 0.3s all linear;
+	 border-bottom: 2px solid #08fdd8;
+}
+ .contact_content > .contact_main > .left_side form > div.input_row input:hover {
+	 background: rgba(8, 253, 216, 0.13);
+	 box-shadow: inset 0 0 20px #08fdd9 6e;
+}
+ .contact_content > .contact_main > .left_side form > div.input_row input:focus {
+	 background: rgba(8, 253, 216, 0.04);
+	 box-shadow: inset 0 0 10px #08fdd9 6e;
+}
+ .contact_content > .contact_main > .left_side form div.input_row div.half {
+	 width: 50%;
+}
+ .contact_content > .contact_main > .left_side form div.input_row div.half > input {
+	 width: 98%;
+}
+ .contact_content > .contact_main > .left_side form div.input_row div.half:nth-child(2) > input {
+	 width: 98%;
+	 margin-left: 2%;
+}
+ .contact_content > .contact_main > .left_side form > div > textarea {
+	 width: 100%;
+	 border: 0;
+	 background: #37393b;
+	 height: 50px;
+	 font-size: 16px;
+	 color: #fff;
+	 padding: 20px;
+	 box-sizing: border-box;
+	 min-height: 150px;
+	 max-height: 250px;
+	 resize: vertical;
+	 border-bottom: 2px solid #08fdd8;
+	 transition: 0.3s all linear;
+}
+ .contact_content > .contact_main > .left_side form > div > textarea:hover {
+	 background: rgba(8, 253, 216, 0.13);
+	 box-shadow: inset 0 0 20px #08fdd9 6e;
+}
+ .contact_content > .contact_main > .left_side form > div > textarea:focus {
+	 background: rgba(8, 253, 216, 0.04);
+	 box-shadow: inset 0 0 10px #08fdd9 6e;
+}
+ .contact_content > .contact_main > .left_side form > div > input#submit {
+	 color: #08fdd8;
+	 font-size: 11px;
+	 letter-spacing: 3px;
+	 font-family: "Open Sans", sans-serif;
+	 text-decoration: none;
+	 padding: 8px 10px;
+	 border: 1px solid #08fdd8;
+	 border-radius: 4px;
+	 background: transparent;
+	 text-transform: uppercase;
+	 float: right;
+	 text-align: center;
+	 margin-right: 10px;
+	 transition: 0.3s linear;
+}
+ .contact_content > .contact_main > .left_side form > div > input#submit:hover {
+	 background: #08fdd8;
+	 color: #252627;
+}
+ .contact_content > .contact_main > .left_side form > div > input#submit:focus {
+	 background: rgba(8, 253, 216, 0.04);
+	 box-shadow: inset 0 0 10px #08fdd9 6e;
+}
+ .contact_content > .contact_main > .right_side {
+	 width: 65%;
+	 height: 114%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 position: absolute;
+	 right: -5%;
+	 top: -6%;
+	 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
+}
+ .contact_content > .contact_main > .right_side > div {
+	 height: 100%;
+}
+ .contact_content > .contact_main > .right_side > div#map {
+	 height: 400px;
+	 width: 100%;
+}
+ @media only screen and (min-width: 320px) and (max-width: 480px) {
+	 .contact_content {
+		 margin: 0;
+		 position: relative;
+		 height: 100%;
+		 width: 100%;
+		 top: 60px;
+		 left: 0;
+	}
+	 .contact_content > .contact_main {
+		 flex-direction: column;
+	}
+	 .contact_content > .contact_main > .left_side {
+		 margin: 0 0 70px 6%;
+		 width: 90%;
+	}
+	 .contact_content > .contact_main > .left_side form {
+		 width: 102%;
+		 margin-left: -4%;
+	}
+	 .contact_content > .contact_main > .left_side form div.input_row:first-child {
+		 flex-direction: column;
+	}
+	 .contact_content > .contact_main > .left_side form div.input_row div.half {
+		 width: 100%;
+	}
+	 .contact_content > .contact_main > .left_side form div.input_row div.half input {
+		 width: 100%;
+	}
+	 .contact_content > .contact_main > .left_side form div.input_row div.half:first-child {
+		 padding: 0 0 10px;
+	}
+	 .contact_content > .contact_main > .left_side form div.input_row div.half:nth-child(2) > input {
+		 width: 100%;
+		 margin-left: 0;
+	}
+	 .contact_content > .contact_main > .right_side {
+		 width: 100%;
+		 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		 overflow: auto;
+		 margin: 0;
+		 min-height: 300px;
+		 position: inherit;
+	}
+	 .contact_content > .contact_main > .right_side > div {
+		 height: 65%;
+		 width: 100%;
+		 position: absolute;
+		 top: 37%;
+		 left: 0;
+	}
+}
+ @media only screen and (min-width: 481px) and (max-width: 1024px) {
+	/*768px*/
+	 .contact_content {
+		 margin: 0;
+		 position: relative;
+		 height: 100%;
+		 width: 100%;
+		 top: 60px;
+		 left: 0;
+	}
+	 .contact_content > .contact_main {
+		 flex-direction: column;
+	}
+	 .contact_content > .contact_main > .left_side {
+		 margin: 0 0 70px 6%;
+		 width: 90%;
+	}
+	 .contact_content > .contact_main > .left_side form {
+		 width: 102%;
+		 margin-left: -4%;
+	}
+	 .contact_content > .contact_main > .left_side form > div > input#submit {
+		 padding: 10px 45px;
+	}
+	 .contact_content > .contact_main > .right_side {
+		 width: 100%;
+		 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		 overflow: auto;
+		 margin: 0;
+		 min-height: 300px;
+		 position: inherit;
+	}
+	 .contact_content > .contact_main > .right_side > div {
+		 height: 65%;
+		 width: 100%;
+		 position: absolute;
+		 top: 37%;
+		 left: 0;
+	}
+}
+ 

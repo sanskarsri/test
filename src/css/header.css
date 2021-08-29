@@ -1,0 +1,376 @@
+﻿header {
+	 display: flex;
+	 justify-content: space-between;
+	 flex-direction: column;
+	 position: absolute;
+	 top: 0;
+	 width: 55px;
+	 height: 100%;
+	 min-height: 400px;
+	 z-index: 3;
+	 background: #181818;
+}
+ header > div.logo {
+	 display: block;
+	 padding: 5px 0 0;
+	 width: 55px;
+	/* > .logo_img > .o_letter {
+		 position: absolute;
+		 font-size: 50px;
+		 font-family: LogoImg, sans-serif;
+		 width: 100%;
+		 height: 100%;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 text-shadow: 0 0 10px #08fdd859;
+		 color: #949292;
+	}
+	 > .logo_img > .m_letter {
+		 position: absolute;
+		 font-size: 24px;
+		 font-family: LogoImg, sans-serif;
+		 width: 100%;
+		 height: 100%;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 bottom: 4px;
+		 text-shadow: .3px .3px rgba(148, 146, 146, 0.2), .6px .6px rgba(148, 146, 146, 0.2), .9px .9px rgba(148, 146, 146, 0.2), 1.2px 1.2px rgba(148, 146, 146, 0.2), 1.5px 1.5px rgba(148, 146, 146, 0.2), 1.8px 1.8px rgba(148, 146, 146, 0.2);
+		 color: #949292;
+		 transform: rotate(15deg);
+	}
+	 */
+}
+ header > div.logo > .logo_img {
+	 animation: App-logo-spin infinite 15s ease-in-out;
+	 position: relative;
+	 margin: 0 auto;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 transform: rotate(360deg);
+}
+ header > div.logo > .logo_img img {
+	 width: auto;
+	 height: 55px;
+}
+ header > div.logo > span {
+	 display: block;
+	 margin: 0 auto 5px;
+	 font-size: 18px;
+	 height: auto;
+	 color: #949292;
+	 text-align: center;
+	 font-family: myLogo, sans-serif;
+	 text-shadow: 0 0 1px #08fdd8 8c;
+	 transition: 0.3s all linear;
+}
+ header > div.main_buttons {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 align-content: center;
+	 text-align: center;
+	 width: 100%;
+	 height: 300px;
+}
+ header > div.main_buttons a {
+	 display: flex;
+	 -ms-flex-direction: column;
+	 flex-direction: column;
+	 color: #4d4d4e;
+	 height: 100%;
+	 justify-content: center;
+	 background: #181818;
+	 width: 55px;
+	 transition: 0.3s;
+	 text-decoration: none;
+}
+ header > div.main_buttons a span {
+	 font-weight: lighter;
+	 text-transform: uppercase;
+	 font-size: 8px;
+	 padding: 0;
+	 margin: 16px auto 0;
+	 opacity: 0;
+	 color: #08fdd8;
+}
+ header > div.main_buttons a:hover {
+	 width: 65px;
+}
+ header > div.main_buttons a:hover, header > div.main_buttons a:hover span {
+	 opacity: 1;
+	 color: #08fdd8;
+	 transition: 0.3s;
+	 /* padding-top: 15px; */
+	 text-decoration: none;
+}
+ header > div.main_buttons a .fa-user, header > div.main_buttons a .fa-home, header > div.main_buttons a .fa-cog, header > div.main_buttons a .fa-eye, header > div.main_buttons a .fa-envelope, header > div.main_buttons a .fa-book-open, header > div.main_buttons a .fa-briefcase {
+	 text-transform: uppercase;
+	 font-size: 22px;
+	 display: block;
+	 line-height: 51px;
+	 margin: 0 auto;
+	 height: 20px;
+	 position: relative;
+	 text-decoration: none;
+}
+ header > div.main_buttons a.active > span {
+	 opacity: 1;
+	 transition: 0.3s;
+}
+ header > div.main_buttons a.active > .fa-user, header > div.main_buttons a.active > .fa-home, header > div.main_buttons a.active > .fa-cog, header > div.main_buttons a.active > .fa-eye, header > div.main_buttons a.active > .fa-envelope, header > div.main_buttons a.active > .fa-book-open, header > div.main_buttons a.active > .fa-briefcase {
+	 color: #08fdd8;
+	 transition: 0.3s;
+}
+ header > div.social_buttons {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-evenly;
+	 align-content: center;
+	 text-align: center;
+	 width: 100%;
+}
+ header > div.social_buttons a:hover > .fa-whatsapp, header > div.social_buttons a:hover > .fa-github, header > div.social_buttons a:hover > .fa-instagram {
+	 color: #08fdd8;
+}
+ header > div.social_buttons .fa-whatsapp, header > div.social_buttons .fa-github, header > div.social_buttons .fa-instagram {
+	 display: block;
+	 padding: 5px 0;
+	 margin: 0 auto;
+	 height: 30px;
+	 font-size: 15px;
+	 line-height: 16px;
+	 transition: 0.3s;
+	 color: #4d4d4e;
+}
+ header > div.burger_menu {
+	 display: none;
+}
+header > div.social_buttons > a{
+	text-decoration: none;
+}
+ @keyframes App-logo-spin {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 2% {
+		 transform: rotate(10deg);
+	}
+	 6% {
+		 transform: rotate(-35deg);
+	}
+	 8% {
+		 transform: rotate(360deg);
+	}
+}
+ @media only screen and (min-width: 320px) and (max-width: 480px) {
+	 header {
+		 flex-direction: row;
+		 width: 100%;
+		 height: 60px;
+		 min-height: auto;
+		 transition: 0.2s overflow 1s;
+		 position: fixed;
+		 overflow: inherit;
+	}
+	 header > div.logo {
+		 padding: 0;
+	}
+	 header > div.logo > span {
+		 margin: 0;
+		 position: absolute;
+		 top: 9px;
+		 left: 37%;
+		 font-size: 31px;
+		 letter-spacing: 2.5px;
+		 color: #08fdd8;
+	}
+	 header > div.logo.is-open span {
+		 opacity: 0;
+	}
+	 header > div.main_buttons {
+		 position: absolute;
+		 flex-direction: row;
+		 width: 100%;
+		 height: 55px;
+		 top: 59px;
+		 background: #181818;
+		 left: 100%;
+		 transition: 0.3s all linear;
+	}
+	 header > div.main_buttons a:hover {
+		 width: 55px;
+	}
+	 header > div.main_buttons.is-open {
+		 left: 0;
+	}
+	 header > div.social_buttons {
+		 flex-direction: row;
+		 width: auto;
+		 min-width: 180px;
+		 height: 60px;
+		 position: absolute;
+		 top: 25px;
+		 left: 100%;
+		 transition: 0.3s all linear;
+	}
+	 header > div.social_buttons .fa-whatsapp, header > div.social_buttons .fa-github, header > div.social_buttons .fa-instagram {
+		 height: 60px;
+		 padding: 0;
+	}
+	 header > div.social_buttons.is-open {
+		 left: calc(50% - 90px);
+	}
+	 header > div.burger_menu {
+		 width: 50px;
+		 height: 100%;
+		 display: flex;
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+		 position: relative;
+		 background-color: #181818;
+		/*hr {
+			 width: 100%;
+			 padding: 0;
+			 margin: 4px 0;
+			 border: 1px solid #4d4d4e;
+			 transition: 0.3s all linear;
+		}
+		 &.active hr {
+			 width: 70%;
+			 padding: 0;
+			 position: absolute;
+			 margin: 0;
+			 border: 1px solid #4d4d4e;
+			 transition: 0.3s all linear;
+			 &:nth-child(1) {
+				 transform: rotate(45deg);
+				 transition: 0.3s all linear;
+			}
+			 &:nth-child(2) {
+				 //display: none;
+				 transition: 0.2s all linear;
+				 opacity: 0;
+			}
+			 &:nth-child(3) {
+				 transform: rotate(-45deg);
+				 transition: 0.3s all linear;
+			}
+		}
+		*/
+	}
+	 header > div.burger_menu .menu-icon {
+		 font-size: 6rem;
+		 width: 70%;
+		 height: 50%;
+		 display: flex;
+		 position: relative;
+		 background-color: transparent;
+		 border: 0;
+		 padding: 0;
+		 outline: none;
+		 user-select: none;
+		 touch-action: manipulation;
+		 cursor: pointer;
+	}
+	 header > div.burger_menu .menu-icon:before {
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 55%;
+		 background-color: #4d4d4e;
+		 width: 100%;
+		 height: 4px;
+		 border-radius: 0;
+		 margin-top: -50%;
+		 transition: 0.2s ease 0.2s;
+	}
+	 header > div.burger_menu .menu-icon:after {
+		 content: "";
+		 display: block;
+		 position: absolute;
+		 top: 50%;
+		 background-color: #4d4d4e;
+		 width: 100%;
+		 height: 4px;
+		 border-radius: 0;
+		 margin-top: 25%;
+		 transition: 0.2s ease 0.2s;
+	}
+	 header > div.burger_menu .menu-icon span {
+		 display: block;
+		 position: absolute;
+		 top: 37%;
+		 background-color: #4d4d4e;
+		 width: 100%;
+		 height: 4px;
+		 border-radius: 0;
+		 transition: 0.2s;
+	}
+	 header > div.burger_menu .menu-icon span:before {
+		 display: block;
+		 position: absolute;
+		 background-color: #4d4d4e;
+		 width: 100%;
+		 height: 4px;
+		 border-radius: 0;
+		 content: "";
+		 transition: inherit;
+		 left: 0;
+		 top: 0;
+	}
+	 header > div.burger_menu .menu-icon.is-open:before, header > div.burger_menu .menu-icon.is-open:after {
+		 transition: 0.2s ease;
+		 width: 0;
+	}
+	 header > div.burger_menu .menu-icon.is-open span {
+		 transform: rotate(45deg);
+		 transition: 0.2s ease 0.2s;
+		 background-color: #08fdd8;
+	}
+	 header > div.burger_menu .menu-icon.is-open span:before {
+		 transform: rotate(-90deg);
+		 background-color: #08fdd8;
+	}
+}
+ @media only screen and (min-width: 481px) and (max-width: 1024px) {
+	/*768px*/
+	 header {
+		 flex-direction: row;
+		 width: 100%;
+		 height: 60px;
+		 min-height: auto;
+		 position: fixed;
+		 overflow: hidden;
+	}
+	 header > div.logo {
+		 padding: 0;
+	}
+	 header > div.logo > .logo_img img {
+		 height: 45px;
+	}
+	 header > div.logo > span {
+		 margin: -6px;
+	}
+	 header > div.main_buttons {
+		 flex-direction: row;
+		 width: 400px;
+		 height: 60px;
+	}
+	 header > div.main_buttons a:hover {
+		 width: 55px;
+	}
+	 header > div.social_buttons {
+		 flex-direction: row;
+		 width: auto;
+		 min-width: 100px;
+		 height: 60px;
+	}
+	 header > div.social_buttons .fa-whatsapp, header > div.social_buttons .fa-github, header > div.social_buttons .fa-instagram {
+		 height: 60px;
+		 padding: 0;
+	}
+}

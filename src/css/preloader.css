@@ -1,0 +1,217 @@
+﻿:root {
+  --fur: #252627;
+  --ear: #e4b89b;
+  --cap-strap--large: #f00;
+  --cap-strap--small: #900;
+  --cap: #08fdd8;
+  --dots: rgba(242,242,242,0.6);
+  --frame: #000;
+  --shine: rgba(242,242,242,0.35);
+  --lens: #595959;
+  --code-one: rgba(128,230,25,0.5);
+  --code-two: rgba(229,230,25,0.5);
+  --code-three: rgba(230,25,128,0.5);
+  --code-four: rgba(25,195,230,0.5);
+}
+.preloader_content {
+	 z-index: 2;
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 background: #252627;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+}
+ svg {
+  height: 30vmin;
+}
+.code-block {
+  -webkit-animation: read 1s infinite linear;
+          animation: read 1s infinite linear;
+}
+.code-block rect {
+  fill: var(--code-one);
+}
+.code-block rect:nth-of-type(5) {
+  fill: var(--code-four);
+}
+.code-block rect:nth-of-type(8),
+.code-block rect:nth-of-type(9) {
+  fill: var(--code-two);
+}
+.code-block rect:nth-of-type(12) {
+  fill: var(--code-three);
+}
+.bear__fur,
+.bear__outer-ear {
+  fill: var(--fur);
+}
+.bear__inner-ear,
+.bear__muzzle {
+  fill: var(--ear);
+}
+.bear__cap-strap {
+  fill: var(--cap-strap--large);
+}
+.bear__small-cap-strap {
+  fill: var(--cap-strap--small);
+}
+.bear__cap {
+  fill: var(--cap);
+}
+.lens {
+  fill: var(--lens);
+}
+.lens__shine {
+  fill: var(--shine);
+}
+.shades-dot {
+  fill: var(--dots);
+}
+.shades-frame {
+  fill: var(--frame);
+}
+@-webkit-keyframes read {
+  to {
+    transform: translate(0, -283.5px);
+  }
+}
+@keyframes read {
+  to {
+    transform: translate(0, -283.5px);
+  }
+}
+
+ .thecube .c4 {
+	 -webkit-transform: scale(1.1) rotateZ(270deg);
+	 transform: scale(1.1) rotateZ(270deg);
+}
+ .thecube .c2:before {
+	 -webkit-animation-delay: 0.3s;
+	 animation-delay: 0.3s;
+}
+ .thecube .c3:before {
+	 -webkit-animation-delay: 0.6s;
+	 animation-delay: 0.6s;
+}
+ .thecube .c4:before {
+	 -webkit-animation-delay: 0.9s;
+	 animation-delay: 0.9s;
+}
+ @keyframes foldthecube {
+	 0%, 10% {
+		 -webkit-transform: perspective(140px) rotateX(-180deg);
+		 transform: perspective(140px) rotateX(-180deg);
+		 opacity: 0;
+	}
+	 25%, 75% {
+		 -webkit-transform: perspective(140px) rotateX(0deg);
+		 transform: perspective(140px) rotateX(0deg);
+		 opacity: 1;
+	}
+	 90%, 100% {
+		 -webkit-transform: perspective(140px) rotateY(180deg);
+		 transform: perspective(140px) rotateY(180deg);
+		 opacity: 0;
+	}
+}
+ .preloader_content .wrapper {
+	 width: 30%;
+	 margin: 65px 0 0;
+}
+.progress {
+    height: 0.5rem;
+}
+
+ .progress-bar {
+	 height: 10px; 
+	 width:100%;
+	 position: relative;
+	 z-index: 10;
+	 background-color: #55708d;
+	 transition: 0.5s ease;
+}
+
+.bg-neon{
+	background-color: #08fdd8;
+}
+ .progress-bar .progress {
+	 position: relative;
+	 height: 100%;
+	 background-color: #08fdd8;
+	 transition: width 2s ease-out;
+	 border-radius: 0 2px 2px 0;
+}
+ .progress-bar .glow {
+	 width: 60px;
+	 max-width: 100%;
+	 height: 100%;
+	 float: right;
+}
+ .progress-bar .glow::before, .progress-bar .glow::after {
+	 content: '';
+	 display: block;
+	 position: relative;
+	 border-radius: 0 2px 2px 0;
+}
+ .progress-bar .glow::before {
+	 background: transparent;
+	 height: 100%;
+	 box-shadow: 0 0 10px #08fdd8, 0 0 10px #08fdd8;
+	 z-index: -5;
+}
+ .progress-bar .glow::after {
+	 background: linear-gradient(to right, #252627 0%, transparent 100%);
+	 height: calc(100% + 20px);
+	 width: calc(100% + 10px);
+	 top: -10px;
+	 left: -10px;
+	 z-index: -3;
+}
+ .label {
+	 font-family: monospace;
+	 text-shadow: 0 0 2px #08fdd8;
+	 font-size: 13px;
+	 text-align: center;
+	 font-weight: 100;
+	 letter-spacing: 2px;
+	 margin: 0 0 7px;
+}
+ .fill-1 {
+	 animation: fill-1 1.3s linear;
+	 animation-fill-mode: forwards;
+	 width: 0;
+}
+ @keyframes fill-1 {
+	 0% {
+		 width: 0;
+	}
+	 100% {
+		 width: 100%;
+	}
+}
+ .label.one {
+	 animation: label 0.5s ease-out;
+	 animation-fill-mode: forwards;
+	 opacity: 0;
+}
+ @keyframes label {
+	 0% {
+		 opacity: 0;
+		 transform: translateY(10px);
+	}
+	 100% {
+		 opacity: 0.9;
+		 transform: translateY(0);
+	}
+}
+ 
+@media screen and (max-width: 600px) {
+  svg {
+  height: 45vmin;
+}
+}
